@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; text-align: center;">
+
+    
+    <div style="background-color: #333; width: 300px; padding: 20px; border-radius: 10px; margin-top: 100px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+
+        
+        <h2 style="color: white; margin-bottom: 15px;">My Music Player</h2>
+
+        
+        <audio id="audio" style="width: 100%;" controls>
+            <source src="your-audio-file.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        
+        <div style="margin-top: 10px;">
+            <button onclick="togglePlay()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Play/Pause
+            </button>
+        </div>
+
+       
+        <div style="margin-top: 10px;">
+            <label for="volume" style="color: white; margin-right: 10px;">Volume:</label>
+            <input type="range" id="volume" value="100" max="100" onchange="adjustVolume()" style="width: 100%;"/>
+        </div>
+    </div>
+
+   
+    <script>
+        var audio = document.getElementById("audio");
+
+        
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        
+        function adjustVolume() {
+            var volume = document.getElementById("volume").value;
+            audio.volume = volume / 100;
+        }
+    </script>
+
+</body>
+</html>
