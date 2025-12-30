@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Chat UI</title>
+</head>
+
+<body style="
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color:#fafafa;
+">
+
+<!-- Header -->
+<div style="
+  display:flex;
+  align-items:center;
+  padding:12px;
+  border-bottom:1px solid #ddd;
+  background-color:white;
+">
+  <img src="https://via.placeholder.com/40"
+       style="border-radius:50%; margin-right:10px;">
+  <strong>alex_23</strong>
+</div>
+
+<!-- Chat Area -->
+<div style="
+  padding:15px;
+  height:420px;
+  overflow-y:auto;
+">
+
+  <!-- Received -->
+  <div style="
+    background-color:#efefef;
+    padding:10px;
+    border-radius:18px;
+    width:60%;
+    margin-bottom:10px;
+  ">
+    Hey! Are you free today?
+  </div>
+
+  <!-- Sent -->
+  <div style="
+    background-color:#3797f0;
+    color:white;
+    padding:10px;
+    border-radius:18px;
+    width:60%;
+    margin-bottom:10px;
+    margin-left:auto;
+  ">
+    Yeah 😊 What’s up?
+  </div>
+
+  <!-- Received -->
+  <div style="
+    background-color:#efefef;
+    padding:10px;
+    border-radius:18px;
+    width:60%;
+    margin-bottom:10px;
+  ">
+    Let’s work on the project.
+  </div>
+
+</div>
+
+<!-- Message Input -->
+<div style="
+  display:flex;
+  align-items:center;
+  padding:10px;
+  border-top:1px solid #ddd;
+  background-color:white;
+">
+
+  <input type="text"
+         placeholder="Message..."
+         style="
+           flex:1;
+           padding:10px;
+           border-radius:20px;
+           border:1px solid #ccc;
+           outline:none;
+         ">
+
+  <button style="
+    margin-left:10px;
+    background:none;
+    border:none;
+    color:#3797f0;
+    font-size:16px;
+    cursor:pointer;
+  ">
+    Send
+  </button>
+
+</div>
+
+</body>
+</html>
